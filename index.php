@@ -11,8 +11,8 @@
 
 
 
-    include_once 'db_connect.php';
-    include 'queries.php';
+    include_once 'php/db_connect.php';
+    include 'php/queries.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +22,7 @@
     <title>PoppletonDogShow</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href = "../css/styles.css">
+    <link rel="stylesheet" href = "css/styles.css">
     
 </head>
     <style>
@@ -72,7 +72,7 @@ $leaderboard_result = mysqli_query($connection, $leaderboard_query);
     if($leaderboard_result -> num_rows > 0) {
         while ($dog = $leaderboard_result->fetch_assoc()) {
             
-            echo '<tr><td>' .  $dog ['Name'] . "</td><td>" . $dog ['Breed'] . "</td><td>" . $dog['Avg_Score']."</td><td>" ."<a class='owners' href='owners.php?ID={$dog['OwnersId']}'>{$dog['Owner']} </a>"."</td><td>" .
+            echo '<tr><td>' .  $dog ['Name'] . "</td><td>" . $dog ['Breed'] . "</td><td>" . $dog['Avg_Score']."</td><td>" ."<a class='owners' href='php/owners.php?ID={$dog['OwnersId']}'>{$dog['Owner']} </a>"."</td><td>" .
                 "<a class = 'emails' href='mailto: {$dog['Email']}'> {$dog['Email'] } </a>". "</td></tr>";
 
         }
@@ -90,6 +90,6 @@ $leaderboard_result = mysqli_query($connection, $leaderboard_query);
 //Terminate the database connection.
 $connection = null;
 ?>
-<script src="../js/index.js"> </script>
+<script src="js/index.js"> </script>
 </body>
 </html>
