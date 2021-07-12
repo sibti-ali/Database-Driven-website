@@ -1,0 +1,128 @@
+
+body {
+   
+    background-image: url(../rsc/dogsbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+} 
+.container{
+    margin-top: 20px;
+    backdrop-filter: blur(50px);
+    background:rgba(255, 255, 255, 0.397);
+    border-radius: 10px;
+    padding-bottom: 10px;
+
+}
+
+h1{
+    background-color: transparent;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    margin-top: 100px;
+   
+    font-weight: 200;
+    text-align: left;
+    
+}
+h2{
+    background-color: transparent;
+    color: black;
+    
+    font-family: 'Comfortaa', cursive;
+    font-weight: 200;
+    text-align: left;
+}
+table{  
+   
+   
+
+    column-gap: 100px;
+    
+    border-collapse: collapse;
+    width: 100%;
+    color: black;
+    font-style: "bold";
+    font-size:15px;
+    text-align: left;
+}
+th{
+    color: black;
+    background: transparent;
+}
+tr:nth-child(odd) {backdrop-filter: blur(-1px);}
+tr {
+    height: 40px ;
+    width: 100px !important;
+    color: black;
+    background-color:transparent;
+    margin-top: 5px;
+    border-bottom: 0.5px solid black;
+ }
+ th{
+     justify-content:space-between;
+ }
+ 
+
+
+
+.navbar{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 600;
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.12);
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content:space-between;
+    text-transform: uppercase;
+}
+.leftside {
+    margin-left: 30px;
+    display: flex;
+    text-transform: uppercase;
+    color:black;
+    font-size: 25px;
+
+}
+.rightside *{
+    text-decoration: none;
+    justify-content: space-between;
+    margin-right: 38px;
+    color: black;
+    transition: color 0.5s;
+    display: inline;
+}
+
+.rightside *:hover{
+    color: white;
+    border-bottom: 1px solid white;
+
+}
+.owners{
+    height: 50px;
+    text-decoration: none;
+    color:black;
+    border-bottom: 1px solid black;
+    transition: color 0.5s;
+    transition: font-size 0.5s;
+}
+.owners:hover{
+    color:white;
+    font-size:large;
+    border-bottom: 2px solid black;
+}
+
+.emails{
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+    transition: font-size 0.5s;
+    border-bottom: 1px solid black;
+}
+.emails:hover{
+    font-size: large;
+    color: white;
+    
+
+}
