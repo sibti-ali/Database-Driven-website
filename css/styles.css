@@ -9,8 +9,8 @@ body {
 } 
 .container{
     margin-top: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.418);
-    backdrop-filter: blur(30px);
+    border: 1px solid rgba(13, 192, 223, 0.09);
+    backdrop-filter: blur(25px);
     background:rgba(0, 4, 255, 0.048);
     border-radius: 10px;
     padding-bottom: 10px;
