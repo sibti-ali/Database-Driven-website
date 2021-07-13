@@ -20,8 +20,12 @@
 <head>
     <meta charset="UTF-8">
     <title>PoppletonDogShow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href = "css/styles.css">
     
 </head>
@@ -33,7 +37,7 @@
     <div class="container">
         <nav class="navbar">
             <div class="leftside">
-                <a>Poppleton Dog Show</a>
+                <a>The Poppleton Show</a>
             </div>
             <div class="rightside">
                 <a href="http://">our dogs</a>  
@@ -49,9 +53,11 @@ $header_result = mysqli_query($connection, $header_query);
 $header_array = mysqli_fetch_assoc($header_result);
 $leaderboard_result = mysqli_query($connection, $leaderboard_query);
 ?>
-<h1> <?php echo 'This year '. $header_array['Owners']?> owners entered <?php echo $header_array['Dogs'] ?> dogs in <?php echo $header_array['Events'] ?> events   </h1>
-<h2> The top 10 dogs for this season are:</h2>
-
+    <div class="banner">
+        <h1> <?php echo $header_array['Dogs'] ?> dogs,  <?php echo $header_array['Owners']?> owners </h1>
+        <h3> <?php echo $header_array['Events'] ?> events...</h3>
+        <h4> The top 10 dogs for this season are:</h4>
+    </div>
 
 
         <div id="tabCon">    
